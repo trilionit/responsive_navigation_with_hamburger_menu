@@ -99,12 +99,13 @@ nav{
     position: absolute;
     margin: 0;
     padding: 0;
-    display: block;
+    display: none;
     top: 100%;
     left: 0;
     text-align: left;
     width: 100%;
     background: rgba(1,35,70, .8);
+    transition:all ease-in-out 500ms;
 
   }
   .nav li{
@@ -123,6 +124,10 @@ nav{
     padding: 10px;
     cursor: pointer;
   }
+  .show-menu{
+    display: block;
+   transition:all ease-in-out 300ms;
+  }
   .hamburger,
   .hamburger::before,
   .hamburger::after{
@@ -138,5 +143,18 @@ nav{
   }
   .hamburger::after{
     transform:translateY(3px);
+  }
+  .open .hamburger{
+    height: 2px;
+    width: 1.7em;
+    transform: rotate(45deg);
+  }
+  .open .hamburger::after{
+    opacity: 0;
+  }
+  .open .hamburger::before{
+    height: 2px;
+    width: 1.7em;
+    transform:rotate(90deg);
   }
 }
