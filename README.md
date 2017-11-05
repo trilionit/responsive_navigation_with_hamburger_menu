@@ -1,6 +1,9 @@
 A simple Horizontal Navigation built with HTML5, CSS3 and JQUERY. 
 Comments on improvements welcome
 
+# check out demo
+http://designbyprince.com/demos/ui/responsive_navigation
+
 ######### --REQUISITS-- #############
 1. HTML5
 2. CSS3
